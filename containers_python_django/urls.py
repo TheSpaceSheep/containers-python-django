@@ -21,4 +21,6 @@ from main.views import home
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
+    path('fixed-content/', get_fixed_content_with_env),
+
 ]
