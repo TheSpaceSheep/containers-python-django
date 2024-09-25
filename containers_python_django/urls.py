@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from main.views import home
+from main.views import home, get_fixed_content_with_env
 
 urlpatterns = [
     path('admin/', admin.site.urls),

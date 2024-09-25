@@ -7,8 +7,6 @@ from django.http import JsonResponse
 def home(request):
     return render(request, 'home.html')
 
-
-
 def get_fixed_content_with_env(request):
     # Access the environment variable
     my_var = os.getenv('MY_ENV_VARIABLE', 'Variable not set')
