@@ -124,4 +124,5 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 import os
-MY_ENV_VARIABLE = os.getenv('MY_ENV_VARIABLE', 'Variable not set')
+MY_ENV_VARIABLE = os.getenv('MY_ENV_VARIABLE', None)
+assert MY_ENV_VARIABLE
