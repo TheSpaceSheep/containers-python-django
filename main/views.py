@@ -14,7 +14,7 @@ def get_fixed_content_with_env(request):
     # Create a fixed content response combined with the environment variable
     response_content = {
         'fixed_message': 'This is a fixed message.',
-        'env_variable': settings.MY_ENV_VARIABLE  # Include the environment variable
+        'env_variable': os.getenv("BONJOUR", "Not Set")  # Include the environment variable
     }
     
     # Return the response as JSON
